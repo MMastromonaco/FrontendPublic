@@ -99,15 +99,9 @@ li p {
 .Win {
     color: gold;
 }
-#Win {
-    color: gold;
-}
 
 .Nom {
     color:silver;
-}
-#Nom {
-    color: silver;
 }
 
 @media (max-width: 1000px) {
@@ -120,7 +114,9 @@ li p {
     #c2 {
         display: grid;
         grid-template:
+        "e"
         "c"
+        "f"
         "d" / 1fr;
     }
 }
