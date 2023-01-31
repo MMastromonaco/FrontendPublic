@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+body {
+    background-color: rgb(204, 145, 55);
+    width: 1024px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-style: italic;
+    font-family: serif;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+header, main, footer {
+    background-color: beige;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+ul {
+    list-style-type: square;
+}
+
+#c1 {
+    padding-top: 20px;
+    display: grid;
+    grid-template: 
+    "a b" / 1fr 3fr;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#picOfBrad {
+    grid-area: a;
+    padding-bottom: 10px;;
+    width: 250px;
+}
+
+#infoBrad {
+    grid-area: b;
+}
+
+#infoBrad p {
+    text-align: left;
+    padding-bottom: 2.5rem;
+}
+
+#c2 {
+    padding-top: 10px;
+    display: grid;
+    grid-template:
+    "c d" / 1fr 1fr;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+ul li {
+    padding: 10px;
+    margin-left: 3%;
+}
+
+#Movies {
+    grid-area: c;
+}
+
+#Awards {
+    grid-area: d;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+li p {
+    text-align: left;
+}
+
+#Win {
+    color: gold;
+}
+
+#Nom {
+    color: silver;
+}
+
+@media (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+    #c1 {
+        display: grid;
+        grid-template: 
+        "a"
+        "b" / 1fr;
+    }
+    #c2 {
+        display: grid;
+        grid-template:
+        "c"
+        "d" / 1fr;
+    }
+}
