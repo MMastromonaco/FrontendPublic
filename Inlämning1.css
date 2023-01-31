@@ -71,8 +71,12 @@ ul {
     padding-bottom: 10px;
 }
 
-h2 {
-    grid-area: e, f;
+#movies-headline {
+    grid-area: e;
+}
+
+#awards-headline {
+    grid-area: f;
 }
 
 ul li {
