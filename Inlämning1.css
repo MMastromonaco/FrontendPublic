@@ -65,9 +65,14 @@ ul {
     padding-top: 10px;
     display: grid;
     grid-template:
+    "e f"
     "c d" / 1fr 1fr;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
+}
+
+h2 {
+    grid-area: e, f;
 }
 
 ul li {
